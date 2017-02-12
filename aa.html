@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+<head>
+<script>
+function showImage(imgName,id) {
+     var image = document.getElementById(id);
+     image.src = imgName
+}
+</script>
+<style>
+.c{
+background-image: url("home.jpg");
+
+}
+#left img{
+ width:200px; 
+height:120px;
+}
+#right img{
+width:400px;
+height:250px;
+}
+</style>
+</head>
+<body>
+
+
+<div id = "left">
+	<img src = "1.jpg" alt = "1.jpg" title = "1.jpg" onclick = "showImage('1.jpg','current');"/>
+	<img src = "2.jpg" alt = "2.jpg" title = "2.jpg" onclick = "showImage('2.jpg','current');"/>
+        <img src = "3.jpg" alt = "3.jpg" title = "3.jpg" onclick = "showImage('3.jpg','current');"/>
+	<img src = "4.jpg" alt = "4.jpg" title = "4.jpg" onclick = "showImage('4.jpg','current');"/></div>
+<div id = "right"><img src = "2.jpg"id = "currentImg" alt = "2.jpg" title = "2.jpg" align = "middle" onclick = "showImage('1.jpg');"/><br/>
+<img src = "1.jpg"id = "current" alt = "1.jpg" title = "1.jpg" align = "middle" onclick = "showImage('1.jpg');" /></div>
+</div>
+</body>
+</html>

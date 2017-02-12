@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="ww.css">
+<link rel = "stylesheet" type = "text/css" href = "fab.css">
+<head>
+<script>
+function changeimage1(){
+	var image = document.getElementById("thepic1");
+		if(image.src.match("l1.jpg")){
+			image.src = "l1a.jpg";
+		}
+		else if (image.src.match("l1a.jpg")){
+			image.src = "l1b.jpg";
+		}
+		else{
+			image.src = "l1.jpg";
+		}
+}
+function changeimage2(){
+	var image = document.getElementById("thepic2");
+		if(image.src.match("l2.jpg")){
+			image.src = "l2a.jpg";
+		}
+		else if (image.src.match("l2a.jpg")){
+			image.src = "l2.jpg";
+		}
+		else{
+			image.src = "l2.jpg";
+		}
+}
+function changeimage3(){
+	var image = document.getElementById("thepic3");
+		if(image.src.match("l3.jpg")){
+			image.src = "l3a.jpg";
+		}
+		else if (image.src.match("l3a.jpg")){
+			image.src = "l3.jpg";
+		}
+		else{
+			image.src = "l3.jpg";
+		}
+}
+function changeimage4(){
+	var image = document.getElementById("thepic4");
+		if(image.src.match("l4.jpg")){
+			image.src = "l4a.jpg";
+		}
+		else if (image.src.match("l4a.jpg")){
+			image.src = "l4b.jpg";
+		}
+		else{
+			image.src = "l4.jpg";
+		}
+}
+function putmessage(){
+alert("Item has been added to Cart");
+}
+</script>
+</head>
+<body >
+<div id = "header">
+<marquee behavior="scroll" direction="left" scrollamount="2.0" loop="infinite">
+<div class="w3-container w3-section">
+<div class="w3-tag w3-jumbo w3-orange">F</div>
+<div class="w3-tag w3-jumbo w3-green">A</div>
+<div class="w3-tag w3-jumbo w3-yellow">B</div>
+<div class="w3-tag w3-jumbo w3-green">F</div>
+<div class="w3-tag w3-jumbo w3-orange">U</div>
+<div class="w3-tag w3-jumbo w3-orange">R</div>
+<div class="w3-tag w3-jumbo w3-green">N</div>
+<div class="w3-tag w3-jumbo w3-yellow">I</div>
+<div class="w3-tag w3-jumbo w3-green">S</div>
+<div class="w3-tag w3-jumbo w3-orange">H</div>
+</div>
+</marquee>
+
+<img src = "ff.png" align="left" width = "150" height = "110"><br><br><br><br><br><br><br>
+<ul>
+  <div class="dropdown">
+    <a href="#" class="dropbtn">LIVING ROOM</a>
+    <div class="dropdown-content">
+      <a href="gallery1.html">Sofas & chairs </a>
+      <a href="gallery2.html">Diwan Sets</a>
+    <a href="gallery3.html">Book Shelves & Magazine Racks</a>
+    
+    </div>
+  </div>
+<div class="dropdown">
+    <a href="#" class="dropbtn">DINING ROOM</a>
+    <div class="dropdown-content">
+      <a href="gallery4.html">Dining Tables</a>
+      <a href="gallery5.html">Kitchen Cabinates & Side Boards</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <a href="#" class="dropbtn">BEDROOM</a>
+    <div class="dropdown-content">
+      <a href="gallery6.html">Beds</a>
+      <a href="gallery7.html">Wardrobes</a>
+      <a href="gallery8.html">Dressing Tables</a>
+    </div>
+ </div>
+   <div class="dropdown">
+    <a href="#" class="dropbtn">STUDY ROOM</a>
+    <div class="dropdown-content">
+      <a href="gallery9.html">Study Chairs and Tables</a>
+      <a href="gallery10.html">Laptop Tables & Pads</a>
+    </div>
+</div>
+   <div class="dropdown">
+    <a href="#" class="dropbtn">OUTDOOR FURNITURE</a>
+    <div class="dropdown-content">
+      <a href="gallery11.html">Beanbags</a>
+      <a href="gallery12.html">Outdoor sets</a>
+    </div>
+</div>
+   <div class="dropdown">
+    <a href="#" class="dropbtn">SIGNIN</a>
+    <div class="dropdown-content">
+     <h3 align = "center"><font color = "grey">Signin</font></h3>     
+   <form class="aform" action = "index.html">
+      <label><b><font color = "grey">UserId &nbsp;&nbsp;&nbsp;</b></h6></label>
+        <input type="text" name = "user" placeholder="Enter userid" required><br>
+      <div><label><b><font color = "grey">Password</font></b></label>        
+        <input type="password"  name = "password" placeholder="Enter password" required><br></div>
+        
+      <div style = "display: inline-block;"><a href = "index.html"><button type="submit" class="btn btn-success">Submit</button></a>
+       <a href = "signup.html"><button type="button" class="btn btn-success">SignUp</button></a></div>
+  </form>
+
+
+    </div>
+</div>
+  <li><a href = "index.html"><img src = "111.gif" height = "22" width = "50"></a></li>
+     <li><a href = "about.html">ABOUT</a></li>
+    
+</ul>
+<div class="w3-content w3-section" style="max-width:500px">
+
+<img class="mySlides" src="wsofa.jpg" width = "1271" height = "470px">
+<img class="mySlides" src="wdining.jpg" width = "1271" height = "470px" >
+<img class="mySlides" src="wbed.jpg" width = "1271" height = "470px">
+<img class="mySlides" src="wchair.jpg" width = "1271" height = "470px">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+</script>
+</div>
+<div id="nav">
+<marquee behavior="scroll" direction="up" scrollamount="2.0" loop="infinite"  height= "100%">
+<h3 style = "text-align:center;"><font color = "black">SPECIAL OFFERS</font></h3>
+<img src="lc1.jpg" width="220" height="220"><h5><strike>Rs&nbsp;6,000</strike><br>Rs&nbsp; 4,999&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span onclick = "putmessage()"><font color = "#000">Buy</font></span><br></h5>
+<img src="bb2.jpg" width="220" height="220"><h5><strike>Rs&nbsp;2,999</strike><br>Rs&nbsp; 1,899&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span onclick = "putmessage()"><font color = "#000">Buy</font></span><br></h5>
+<img src="dn1.jpg" width="220" height="220"><h5><strike>Rs&nbsp;22,000</strike><br>Rs&nbsp; 19,999&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span onclick = "putmessage()"><font color = "#000">Buy</font></span><br></h5>
+<img src="44.jpg" width="220" height="220"><h5><strike>Rs&nbsp;16,000</strike><br>Rs&nbsp; 13,999&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span onclick = "putmessage()"><font color = "#000">Buy</font></span><br></h5>
+</marquee>
+</div>
+<div id="section">
+  <div class="img">
+  <img src="l1.jpg" width="400" height="220" onclick="document.getElementById('id01').style.display='block'" class="w3-btn">
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">X</span>
+      <img id = "thepic1" src = "l1.jpg" onclick = "changeimage1()">
+    </div>
+  </div>
+</div>
+  
+  <div class="desc"><h5>Rs 16,000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<span onclick = "putmessage()"><font color = "#ff9933">Buy</font></span></h5></div>
+</div>
+
+<div class="img">
+ <img src="l2.jpg"  width="400" height="220" onclick="document.getElementById('id02').style.display='block'" class="w3-btn">
+  <div id="id02" class="w3-modal">
+   <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn">X</span>
+      <img id = "thepic2" src = "l2.jpg" onclick = "changeimage2()">
+    </div>
+  </div>
+ </div>
+  <div class="desc"><h5>
+Rs 16,000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<span onclick = "putmessage()"><font color = "#ff9933">Buy</font></span></h5></div>
+</div>
+</div>
+
+<div class="img">
+    <img src="l3.jpg"  width="400" height="220"onclick="document.getElementById('id03').style.display='block'" class="w3-btn">
+  <div id="id03" class="w3-modal">
+   <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id03').style.display='none'" class="w3-closebtn">X</span>
+      <img id = "thepic3" src = "l3.jpg" onclick = "changeimage3()">
+    </div>
+  </div>
+ </div>
+  <div class="desc"><h5>Rs 15,199 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<span onclick = "putmessage()"><font color = "#ff9933">Buy</font></span></h5></div>
+</div>
+</div>
+
+<div class="img">
+    <img src="l4.jpg"  width="400" height="220"onclick="document.getElementById('id04').style.display='block'" class="w3-btn">
+  <div id="id04" class="w3-modal">
+   <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id04').style.display='none'" class="w3-closebtn">X</span>
+      <img id = "thepic4" src = "l4.jpg" onclick = "changeimage4()">
+    </div>
+  </div>
+ </div>
+  <div class="desc"><h5>Rs 16,999 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<span onclick = "putmessage()"><font color = "#ff9933">Buy</font></span></h5></div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<img src = "images.png">
+<h3 class = "h3">Fabfurnish welcomes You</h3>
+</div>
+
+
+
+</body>
+</html>
+

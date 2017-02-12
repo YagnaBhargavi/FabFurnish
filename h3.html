@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="ww.css">
+<link rel = "stylesheet" type = "text/css" href = "fab.css">
+<head>
+
+</head>
+<body >
+<div id = "header">
+<marquee behavior="scroll" direction="left" scrollamount="2.0" loop="infinite">
+<div class="w3-container w3-section">
+<div class="w3-tag w3-jumbo w3-orange">F</div>
+<div class="w3-tag w3-jumbo w3-green">A</div>
+<div class="w3-tag w3-jumbo w3-yellow">B</div>
+<div class="w3-tag w3-jumbo w3-green">F</div>
+<div class="w3-tag w3-jumbo w3-orange">U</div>
+<div class="w3-tag w3-jumbo w3-orange">R</div>
+<div class="w3-tag w3-jumbo w3-green">N</div>
+<div class="w3-tag w3-jumbo w3-yellow">I</div>
+<div class="w3-tag w3-jumbo w3-green">S</div>
+<div class="w3-tag w3-jumbo w3-orange">H</div>
+</div>
+</marquee>
+
+<img src = "ff.png" align="left" width = "150" height = "110"><br><br><br><br><br><br><br>
+<ul>
+  <div class="dropdown">
+    <a href="#" class="dropbtn">LIVING ROOM</a>
+    <div class="dropdown-content">
+      <a href="gallery1.html">Sofas & chairs </a>
+      <a href="gallery2.html">Diwan Sets</a>
+    <a href="gallery3.html">Book Shelves & Magazine Racks</a>
+    
+    </div>
+  </div>
+<div class="dropdown">
+    <a href="#" class="dropbtn">DINING ROOM</a>
+    <div class="dropdown-content">
+      <a href="gallery4.html">Dining Tables</a>
+      <a href="gallery5.html">Kitchen Cabinates & Side Boards</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <a href="#" class="dropbtn">BEDROOM</a>
+    <div class="dropdown-content">
+      <a href="gallery6.html">Beds</a>
+      <a href="gallery7.html">Wardrobes</a>
+      <a href="gallery8.html">Dressing Tables</a>
+    </div>
+ </div>
+   <div class="dropdown">
+    <a href="#" class="dropbtn">STUDY ROOM</a>
+    <div class="dropdown-content">
+      <a href="gallery9.html">Study Chairs and Tables</a>
+      <a href="gallery10.html">Laptop Tables & Pads</a>
+    </div>
+</div>
+   <div class="dropdown">
+    <a href="#" class="dropbtn">OUTDOOR FURNITURE</a>
+    <div class="dropdown-content">
+      <a href="gallery11.html">Beanbags</a>
+      <a href="gallery12.html">Outdoor sets</a>
+    </div>
+</div>
+    <div class="dropdown">
+    <a href="#" class="dropbtn">SIGNIN</a>
+    <div class="dropdown-content">
+     <h3 align = "center"><font color = "grey">Signin</font></h3>     
+   <form class="aform" action = "index.html">
+      <label><b><font color = "grey">UserId &nbsp;&nbsp;&nbsp;</b></h6></label>
+        <input type="text" name = "user" placeholder="Enter userid" required><br>
+      <div><label><b><font color = "grey">Password</font></b></label>        
+        <input type="password"  name = "password" placeholder="Enter password" required><br></div>
+        
+      <div style = "display: inline-block;"><a href = "index.html"><button type="submit" class="btn btn-success">Submit</button></a>
+       <a href = "signup.html"><button type="button" class="btn btn-success">SignUp</button></a></div>
+  </form>
+
+
+
+    </div>
+</div>
+  <li><a href = "index.html"><img src = "111.gif" height = "22" width = "50"></a></li>
+     <li><a href = "about.html">ABOUT</a></li>
+    
+</ul>
+<div class="w3-content w3-section" style="max-width:500px">
+
+<img class="mySlides" src="wsofa.jpg" width = "1200" height = "470px">
+<img class="mySlides" src="wdining.jpg" width = "1200" height = "470px" >
+<img class="mySlides" src="wbed.jpg" width = "1200" height = "470px">
+<img class="mySlides" src="wchair.jpg" width = "1200" height = "470px">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+</script>
+<img src = "hh3.jpg" width = "1200px" height = "700px">
+
+<div>
+<div id="footer">
+<img src = "images.png" width = "1200px">
+<h3 class = "h3">Fabfurnish welcomes You</h3>
+</div>
+</body>
+</html>
+
